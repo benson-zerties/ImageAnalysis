@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package annotations;
+
+message Annotation {
+  message Metadata {
+	  uint32 misdetection = 2;
+  }
+  map<string, Metadata> examples = 1;
+}

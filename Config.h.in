@@ -1,0 +1,2 @@
+#define ImageAnalysis_VERSION_MAJOR @ImageAnalysis_VERSION_MAJOR@
+#define ImageAnalysis_VERSION_MINOR @ImageAnalysis_VERSION_MINOR@

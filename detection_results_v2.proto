@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package object_detection;
+
+message Size {
+  fixed64 value = 1;
+}
+
+message Example {
+  string filename = 1;
+  uint64 timestamp = 2;
+  uint32 num_detections = 3;
+  bytes scores = 4;
+  bytes classes = 5;
+
+  message Box {
+    float xmin = 1;
+    float xmax = 2;
+    float ymin = 3;
+    float ymax = 4;
+  }
+  repeated Box boxes = 6;
+}
